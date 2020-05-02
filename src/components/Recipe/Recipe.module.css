@@ -5,19 +5,20 @@
   display: flex;
   margin: 1rem 0;
   position: relative;
-  background: #9eebf3;
+  background: #fdfdfd;
   justify-content: flex-start;
   align-items: center;
-  -webkit-box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.75);
   transition: 0.1s all linear;
 }
 
 .Box:hover {
-  -webkit-box-shadow: 0px 4px 26px 15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 4px 26px 15px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 26px 15px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 42px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 42px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 42px 3px rgba(0, 0, 0, 0.75);
+  transform: translateY(-7px);
 }
 .Image {
   display: flex;
@@ -30,6 +31,7 @@
   font-size: 0.8rem;
   padding: 0 0.6rem;
   color: #513b41;
+  align-self: flex-start;
 }
 
 .Ready {
@@ -45,4 +47,22 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
+}
+
+.Details {
+  position: absolute;
+  right: 5px;
+  bottom: 4px;
+  border: 1px solid #513b41;
+  padding: 0rem 0.4rem;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #513b41;
+  transition: 0.2s all linear;
+}
+
+.Details:hover {
+  border: 1px solid #f83839;
+  color: #f83839;
 }

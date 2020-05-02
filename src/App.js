@@ -3,20 +3,22 @@ import Input from './components/Input/Input';
 import Button from './components/Button/Button';
 import axios from './axios/axiosSpoonacular';
 import RecipeList from './components/RecipeList/RecipeList';
+import Spinner from './components/Spinner/Spinner';
 
 function App() {
   const [search, setSearch] = useState('');
   const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const searchHandler = event => {
     setSearch(event.target.value);
   };
 
-  // dodaj u state rezultat GET-a
-
   const submitHandler = event => {
     event.preventDefault();
     if (search !== '') {
+      setRecipes([]);
+      setLoading(true);
       axios
         .get('/search', {
           params: {
@@ -38,6 +40,8 @@ function App() {
               ];
             });
           });
+          setLoading(false);
+          setSearch('');
         })
         .catch(err => {
           console.log(err);
@@ -55,6 +59,7 @@ function App() {
       </div>
 
       <div className="recipe-results">
+        {loading && <Spinner />}
         {recipes ? <RecipeList recipes={recipes} /> : null}
       </div>
     </div>
