@@ -1,0 +1,11 @@
+.Input {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #494949;
+}
+
+.Input:focus {
+  color: #494949;
+}

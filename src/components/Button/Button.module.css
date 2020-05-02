@@ -1,0 +1,14 @@
+.Button {
+  background: #f83839;
+  border: none;
+  outline: none;
+  color: rgb(238, 238, 238);
+}
+
+.Button:hover {
+  cursor: pointer;
+}
+
+.Button:active {
+  background: #8d2b2b;
+}
