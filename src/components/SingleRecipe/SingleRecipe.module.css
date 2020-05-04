@@ -1,0 +1,126 @@
+.Button {
+  border: 1px solid #513b41;
+  padding: 0rem 0.4rem;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  background: white;
+  width: 100px;
+  padding: 0.1rem 1rem;
+  color: #513b41;
+  transition: 0.2s all linear;
+}
+
+.Button:hover {
+  border: 1px solid #f83839;
+  color: #f83839;
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+.Center {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+.SingleRecipe {
+  margin-top: 2rem;
+  background: #fdfdfd;
+}
+
+.SingleRecipeCenter {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.SingleRecipeCenter h2 {
+  text-transform: capitalize;
+}
+
+.SingleRecipeCenter hr {
+  background: black;
+  height: 0.5px;
+  border: none;
+}
+
+.ImgContainer {
+  height: 220px;
+  width: 100%;
+  position: relative;
+}
+
+.ImgContainer img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.Likes {
+  position: absolute;
+  right: -12px;
+  background: #f83839;
+  bottom: -17px;
+  color: white;
+  height: 2.5rem;
+  flex-direction: column;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.InfoBlockIcon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.InfoBlockIcon span {
+  color: #0f98a7;
+}
+
+.InfoBlockIcon svg {
+  color: #323232;
+}
+
+.Summary {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.DishTypes {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.DishTypes span {
+  border: 1px solid #f83839;
+  color: #f83839;
+  padding: 0.1rem 0.2rem;
+  font-size: 0.8rem;
+  border-radius: 2.3px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  transition: all 0.15s linear;
+}
+
+.DishTypes span:hover {
+  transform: translateY(-2px);
+}
+
+.Summary a {
+  color: #f83839;
+}

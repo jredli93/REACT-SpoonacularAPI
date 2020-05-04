@@ -1,8 +1,9 @@
 import React from 'react';
 import classes from './Recipe.module.css';
+import { Link } from 'react-router-dom';
 
 const Recipe = ({ recipe }) => {
-  const { title, img, ready, servings } = recipe;
+  const { title, img, ready, servings, id } = recipe;
   return (
     <div className={classes.Box}>
       <div className={classes.ImageContainer}>
@@ -16,9 +17,9 @@ const Recipe = ({ recipe }) => {
         <span className={classes.Ready}>{ready}m</span>
         <h4>{title}</h4>
         <span>servings: {servings}</span>
-        <a className={classes.Details} href="#">
+        <Link className={classes.Details} to={`/recipe/${id}`}>
           details
-        </a>
+        </Link>
       </div>
     </div>
   );
