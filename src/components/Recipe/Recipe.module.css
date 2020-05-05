@@ -66,3 +66,27 @@
   border: 1px solid #f83839;
   color: #f83839;
 }
+
+@media (max-width: 768px) {
+  .Box {
+    flex-direction: column;
+    flex: 0 0 100%;
+  }
+
+  .Image {
+    width: 100%;
+  }
+
+  .Content {
+    padding: 0.6rem;
+  }
+}
+
+@media (min-width: 588px) and (max-width: 1024px) {
+  .Box {
+    flex: 0 0 calc(50% - 1rem);
+  }
+  .Content {
+    font-size: 0.6rem;
+  }
+}

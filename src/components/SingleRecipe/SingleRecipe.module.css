@@ -124,3 +124,18 @@
 .Summary a {
   color: #f83839;
 }
+
+@media (max-width: 425px) {
+  body {
+    background: red;
+  }
+  .Center {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ImgContainer {
+    height: auto;
+  }
+}
